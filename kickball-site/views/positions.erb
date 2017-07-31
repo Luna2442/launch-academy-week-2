@@ -1,5 +1,5 @@
 <ul>
-  <% 9.times do |i| %>
-    <li><a href = '/positions/<%= @positions[i] %>'><%= @positions[i] %></a></li>
+  <% @positions.each do |position| %>
+    <li><a href = '/positions/<%= position %>'><%= position %></a></li>
   <% end %>
 </ul>
