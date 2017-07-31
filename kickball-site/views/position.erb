@@ -1,0 +1,14 @@
+<h1>
+<%= @position %>
+</h1>
+
+<p>
+  <% @teams.each do |team| %>
+    <% team.players %>
+    <% team.team_members.each do |player| %>
+      <% if player.position.to_s == @position %>
+        <li><%= player.name %></li>
+      <% end %>
+    <% end %>
+  <% end %>
+</p>
