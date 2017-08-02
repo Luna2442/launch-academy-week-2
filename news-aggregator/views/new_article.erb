@@ -1,0 +1,20 @@
+<h1>Submit Dat Dope Article</h1>
+
+<% if @name_error %>
+  <p>Please provide an article name</p>
+<% elsif @description_error %>
+  <p>Please provide a description</p>
+<% elsif @url_error %>
+  <p>Please provide a valid URL</p>
+<% end %>
+
+<form action='/articles' method='post'>
+  <label for='article_name'>Article Name</label><br>
+  <input type='text' name='article_name' id='article_name' value='<%= @article_name %>'><br>
+  <label for='article_description'>Description</label><br>
+  <input type='text' name='article_description' id='article_description' value='<%= @article_description %>'><br>
+  <label for='article_url'>Article URL</label><br>
+  <input type='text' name='article_url' id='article_url' value='<%= @article_url %>'><br>
+
+  <input type='submit' value='Submit'>
+</form>

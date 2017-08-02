@@ -14,7 +14,7 @@ feature "User checks a recipe's deliciousness", %(
   [X] From the "results" page, I am able to click a link bringing me back to
       the home page
   [X] If I submit a blank entry to the form, I am brought to an error page
-  [ ] From the error page, I can click a link bringing me back to the home page
+  [X] From the error page, I can click a link bringing me back to the home page
 
 ) do
 
@@ -23,7 +23,7 @@ feature "User checks a recipe's deliciousness", %(
     fill_in 'recipe_name', with: 'grand pickled beets'
     click_button 'Submit'
 
-    expect(page).to have_content('delicious recipe')
+    expect(page).to have_content('is a delicious recipe')
   end
 
   scenario "user submits a recipe name without 'pickled beets'" do
