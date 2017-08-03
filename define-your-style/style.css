@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto|Inconsolata);
+
+/* Set the typeface for the heading */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab";
+  color: white
+}
+
+/* Set the typeface for the body, as well as the font and background colors */
+body {
+  font-family:  Roboto, sans-serif; */
+  color: #646464;
+  background-color: #23527c;
+  margin: 2% 10%;
+}
+
+form {
+  background: white;
+  color: blue;
+}
+
+a.button {
+  color: green;
+}
